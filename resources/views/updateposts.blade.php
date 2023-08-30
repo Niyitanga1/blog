@@ -20,7 +20,7 @@
                     <form method="POST" action="{{ url('/edit_save/{id}') }}">
                         @csrf
                         <div class="form-group">
-                            <label for="title">ID</label>
+                            
                             <input type="hidden" id="title" value='{{ $posts->id }}' name="id" class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}" value="{{ old('title') }}" required>
 
                             @if ($errors->has('title'))

@@ -46,7 +46,7 @@ class HomeController extends Controller
         $this->validate($request, [
             'title' => 'required|string',
             'content' => 'required|string',
-            'published_at' => 'required|date',
+            'published_at' => 'date',
         ]);
 
         Post::create([
